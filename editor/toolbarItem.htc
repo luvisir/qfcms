@@ -1,0 +1,73 @@
+<public:component>
+<public:attach event="onmouseover" onevent="mouseOver()"/>
+<public:attach event="onmouseout" onevent="mouseOut()" />
+<public:attach event="onmousedown" onevent="mouseDown()" />
+<public:attach event="onmouseup" onevent="mouseUp()" />
+
+<script language='javascript'>
+function mouseOver()
+{
+	if (element.tagName.toUpperCase() != "IMG")
+		return;
+	element.style.border		= "1px solid #2588E2";
+	/*
+	element.style.borderLeft	= "1px solid #FFFFFF";
+	element.style.borderTop		= "1px solid #FFFFFF";
+	element.style.borderRight	= "1px solid #2588E2";
+	element.style.borderBottom  = "1px solid #2588E2";
+	*/
+}
+function mouseOut()
+{
+	if (element.tagName.toUpperCase() != "IMG")
+		return;
+	element.style.border		= "1px solid #F7FAFF";
+
+	element.style.position		='relative';
+	element.style.left			='0px';
+	element.style.top			='0px';
+
+}
+function mouseDown()
+{
+	if (element.tagName.toUpperCase() != "IMG")
+		return;
+	element.style.border		= "1px solid #2588E2";
+	/*
+	element.style.borderLeft	= "1px solid #2588E2";
+	element.style.borderTop		= "1px solid #2588E2";
+	element.style.borderRight	= "1px solid #FFFFFF";
+	element.style.borderBottom  = "1px solid #FFFFFF";
+	*/
+
+	element.style.position		='relative';
+	element.style.left			='1px';
+	element.style.top			='1px';
+
+}
+function mouseUp()
+{
+	if (element.tagName.toUpperCase() != "IMG")
+		return;
+	element.style.border		= "1px solid #2588E2";
+	/*
+	element.style.borderLeft	= "1px solid #FFFFFF";
+	element.style.borderTop		= "1px solid #FFFFFF";
+	element.style.borderRight	= "1px solid #2588E2";
+	element.style.borderBottom  = "1px solid #2588E2";
+	*/
+
+	element.style.position		='relative';
+	element.style.left			='0px';
+	element.style.top			='0px';
+
+}
+//取消事件
+function returnFalse()
+{
+	event.returnValue  = false;
+	event.cancelBubble = true;
+	return false;
+}
+</script>
+</public:component>

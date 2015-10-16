@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>插入表格</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<STYLE TYPE="text/css">
+ td {font-size: 9pt}
+ body {font-size: 9pt}
+ BUTTON {width:5em}
+</STYLE>
+<SCRIPT LANGUAGE=JavaScript FOR=Ok EVENT=onclick>
+  window.returnValue = selrow.value+"*"+selcol.value
+  window.close();
+</SCRIPT>
+
+</HEAD>
+<BODY bgcolor=menu style='margin-left:8px;margin-top:8px;margin-botton:0px;'>
+<table width="100%" height="70" border="0" cellpadding="10" cellspacing="0">
+  <tr>
+    <td width="651"><fieldset>
+    <legend>插入表格</legend>
+    <table width="100%" border="0" align='center' cellpadding="0" cellspacing="5">
+      <tr>
+        <td width="33%" align=right>行数：</td>
+        <td width="67%" align=left><input type=TEXT size=7 id=selrow></td>
+      </tr>
+      <tr>
+        <td align="right">列数：</td>
+        <td align="left"><input type=text id=selcol size=7>
+      </tr>
+    </table>
+    </fieldset></td>
+    <td width="60"><BUTTON ID=Ok TYPE=SUBMIT>确定</BUTTON>&nbsp;<br>
+    <br>
+    <BUTTON ONCLICK="window.close();">取消</BUTTON></td>
+  </tr>
+</table>
+</BODY>   
+</HTML>

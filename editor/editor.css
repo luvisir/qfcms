@@ -1,0 +1,25 @@
+.toolbar {
+	font-size:12px;
+	font-family: verdana, sans-serif;
+	behavior:url(../editor/toolbar.htc);
+	clear:both;
+}
+.toolbarItem {
+	behavior:url(../editor/toolbarItem.htc);
+	margin-right:2px;
+	margin-bottom:1px;
+	border:1px solid #F7FAFF;
+}
+#Composition {
+	border:1px solid #84AED6;
+	width:90%;
+	height:400px;
+}
+.toolbar-box {
+	margin:2px;
+	padding:.2em 1em;
+	background-color:#EFF7FF;
+	border-left:10px solid #0152AE;
+	font-size:12px;
+	text-align:left;
+}

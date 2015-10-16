@@ -1,0 +1,16 @@
+<public:component>
+<public:attach event="onselectstart" onevent="returnFalse()"/>
+<public:attach event="oncontextmenu" onevent="returnFalse()" />
+<public:attach event="ondragstart" onevent="returnFalse()" />
+<public:attach event="onmouseup" onevent="returnFalse()" />
+
+<script language='javascript'>
+//取消事件
+function returnFalse()
+{
+	event.returnValue  = false;
+	event.cancelBubble = true;
+	return false;
+}
+</script>
+</public:component>

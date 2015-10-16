@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CMS</title>
+<meta http-equiv="content-type" content="text/html;charset=GB2312" />
+<meta name="Generator" content="EditPlus" />
+<meta name="Author" content="CMS" />
+<meta name="Keywords" content="CMS,iceberg" />
+<link rel="stylesheet" href="/cms/style/class/showArticle.css" type="text/css" />
+<script type="text/javascript" src="javascript/function.js"></script>
+</head>
+
+<body>
+
+<!-- 头部分 -->
+<div id="head">
+	<div id='logo'><img src="/cms/style/class/images/logo.gif"/></div>
+	<div id='text'>CMS发布系统<br/>version 1.0</div>
+</div>
+<!-- 导航部分 -->
+<div id="navigator">
+	<ul>
+		<li><a href="/cms/index.php">首 页</a></li>
+		</ul>
+</div>
+
+<!-- 主体部分 -->
+<div id="body">
+	<!-- 右列块 -->
+	<div id="right-col">
+		<!-- 搜索文章块表单 -->
+		<div class="right-cat">
+			<div class="title">快速搜索</div>
+			<form method="get" action="/cms/search.php">
+				<div class="body">
+					<input type="hidden" name="action" value="search" />
+					搜索
+					<select name="type">
+						<option value="title" selected="selected">标题</option>
+						<option value="content">内容</option>
+						<option value="keyword">关键字</option>
+					</select>
+					<input type="text" class="text-box" name="keyword" size="12" />
+					<input type="submit" class="button" value="搜索" />
+				</div>
+			</form>
+		</div>
+		<!-- banner条 -->
+		<div class="right-cat">
+			<div class="title">栏目导航</div>
+			<div class="body">
+				<ul id="sub-cat">
+									<li><a href="/cms/listArticle.php?catPath=0,1">???</a></li>
+								</ul>
+			</div>
+		</div>
+		<div class="right-cat">
+			<div class="title">文章推荐</div>
+			<div class="body">
+				<ul>
+									</ul>
+			</div>
+		</div>
+		<div class="right-cat">
+			<div class="title">相关链接</div>
+			<div class="body">
+				<ul>
+									</ul>
+			</div>
+		</div>
+	</div>
+	<!--左边内容列表 -->
+	<div id="left-col">
+		<div class="cat-box">
+			<div class="title">???</div>
+			<div class="body">
+				<div id="art-head">dfgsddgdfgdg</div>				
+				<div id="art-head2">[作者]:fd [来源]: [时间]:2015-10-16</div>
+				<div id="art-content">vccccccxxxxxxvvbvxcvxcvxvxcvxcv<div>vccccccxxxxxxvvbvxcvxcvxvxcvxcv</div><div>vccccccxxxxxxvvbvxcvxcvxvxcvxcv</div><div>vccccccxxxxxxvvbvxcvxcvxvxcvxcv</div><div>vccccccxxxxxxvvbvxcvxcvxvxcvxcv</div></div>
+				<div id="art-tail">责任编辑:CMS</div>
+			</div>
+			<div class="bottom"></div>
+		</div>
+	</div>
+	<div class="clear-both"></div>
+</div>
+
+<!-- 版权部分 -->
+<div id="foot">
+	<div id="adv">
+		<a href="../../admin/">管理登录</a>
+	</div>
+	<div id="sql">
+		Query Times: 6 <br />Execute Time: 3.1211 ms
+	</div>
+</div>
+
+</body>
+</html>
